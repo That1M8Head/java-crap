@@ -14,9 +14,17 @@ public class Main
         System.out.println("Hi, " + userName + "! \nPick a number, whatever you want!");
         int someNumber = Integer.parseInt(scanObj.nextLine());
         System.out.println(someNumber + "!");
-        if (someNumber > 50)
-            {
-                System.out.println("That's pretty big, isn't it?");
+        if (someNumber > 50) {
+            System.out.println("That's pretty big, isn't it?");
+        }
+        String bababooey = "";
+        while (bababooey != "bababooey") {
+            System.out.println("Type 'bababooey' to continue!");
+            bababooey = scanObj.nextLine();
+            System.out.println("You typed '" + bababooey + "'");
+            if (bababooey == "bababooey") {
+                break;
             }
+        }
     }
 }
